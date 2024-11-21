@@ -11,7 +11,7 @@
 </head>
 <body>
   <header class="header">
-    <div class="header__container container flex space">
+    <div class="container flex">
       <a class="header__logo logo" href="#">Cities</a>
       <nav class="header__cube">
         <ul class="header__menu flex">
@@ -33,73 +33,86 @@
     <section class="hero">
       <div class="hero__container container space">
         <div class="hero__cube">
-          <h1 class="hero__title">The best countries and cities in the world to live in</h1>
-          <p class="hero__text">Don't miss your chance to go on a dream trip</p>
+          <h1 class="hero__title">The best cities to live</h1>
+          <p class="hero__text">Don't miss your chance</p>
           <ul class="hero__list">
-            <li class="hero__item flex">
-              <p class="hero__subtext">do <span>$10 000</span> consectetur elit</p>
+            <li class="hero__item">
+              <p class="hero__subtext flex">initial contribution of <span>$2000</span></p>
             </li>
             <li class="hero__item">
-              <p class="hero__subtext"><span>30%</span> sed do eiusmod tempor</p>
+              <p class="hero__subtext flex"><span>20%</span> discount on our services on the website</p>
             </li>
             <li class="hero__item">
-              <p class="hero__subtext">do <span>17%</span> adipiscing elit sed do</p>
+              <p class="hero__subtext flex"><span>3</span> hours left</p>
             </li>
           </ul>
           <a class="hero__btn btn" href="#">Order</a>
         </div>
-        <picture>
+        <picture class="hero__image">
           <source srcset="img/hero.webp" media="(min-width: 320px) and (max-width: 576px)">
-          <source srcset="img/hero.png" media="(min-width: 577px)">
-          <img loading="eager" srcset="img/hero.png" alt="Hero image" src="#" width="763" height="1009">
+          <source srcset="img/hero.avif" media="(min-width: 577px)">
+          <img loading="eager" srcset="img/hero.avif" alt="Hero image" src="#" width="763" height="1009">
         </picture>
       </div>
     </section>
 
     <section class="banner">
-      <picture>
-        <source srcset="img/banner-1.webp" media="(min-width: 320px) and (max-width: 576px)">
-        <source srcset="img/banner-1.png" media="(min-width: 577px)">
-        <img loading="lazy" srcset="img/banner-1.png" alt="Banner image" src="#" width="622" height="724">
-      </picture>
-      <div class="banner__cube space">
-        <ul class="banner__list">
-          <li class="banner__item">
-            <p class="banner__subtext">High standard of living, access to health services, education and social protection</p>
-          </li>
-          <li class="banner__item">
-            <p class="banner__subtext">Strong economy, low unemployment, high GDP per capita</p>
-          </li>
-          <li class="banner__item">
-            <p class="banner__subtext">Strong democratic institutions, respect for human rights, levels of corruption and overall trust in government</p>
-          </li>
-          <li class="banner__item">
-            <p class="banner__subtext">Low crime rate and high level of public safety</p>
-          </li>
-        </ul>
-        <a class="banner__btn btn" href="#">Find out more</a>
+      <div class="banner__container container">
+        <picture class="banner__image">
+          <source srcset="img/banner-1.webp" media="(min-width: 320px) and (max-width: 576px)">
+          <source srcset="img/banner-1.avif" media="(min-width: 577px)">
+          <img loading="lazy" srcset="img/banner-1.avif" alt="Banner image" src="#" width="622" height="724">
+        </picture>
+        <div class="banner__cube space">
+          <ul class="banner__list">
+            <li class="banner__item">
+              <p class="banner__subtext">High standard of living, access to health services, education and social protection</p>
+            </li>
+            <li class="banner__item">
+              <p class="banner__subtext">Strong economy, low unemployment, high GDP per capita</p>
+            </li>
+            <li class="banner__item">
+              <p class="banner__subtext">Strong democratic institutions, respect for human rights, levels of corruption and overall trust in government</p>
+            </li>
+            <li class="banner__item">
+              <p class="banner__subtext">Policies aimed at protecting the environment, using renewable energy sources and combating climate change.</p>
+            </li>
+          </ul>
+          <a class="banner__btn btn" href="#">Find out more</a>
+        </div>
+        <picture class="banner__image">
+          <source srcset="img/banner-2.webp" media="(min-width: 320px) and (max-width: 576px)">
+          <source srcset="img/banner-2.avif" media="(min-width: 577px)">
+          <img loading="lazy" srcset="img/banner-2.avif" alt="Banner image" src="#" width="578" height="724">
+        </picture>
       </div>
-      <picture>
-        <source srcset="img/banner-2.webp" media="(min-width: 320px) and (max-width: 576px)">
-        <source srcset="img/banner-2.png" media="(min-width: 577px)">
-        <img loading="lazy" srcset="img/banner-2.png" alt="Banner image" src="#" width="578" height="724">
-      </picture>
     </section>
 
     <section class="form">
       <div class="container">
         <div class="form__cube">
-          <h2 class="form__title">Consectetur sed do eiusmod</h2>
-          <form class="form__action" action="#">
-            <input class="form__input" type="text" name="name" placeholder="Name" required>
-            <input class="form__input" type="email" name="email" placeholder="E-mail" required>
-            <label class="form__checkbox-label">
-              <input class="form__checkbox" type="checkbox">
-              <span class="form__checkbox-custom"></span>
-              I have read the privacy policy
-            </label>
-            <button class="form__btn btn" type="submit">Submit data</button>
-          </form>
+          <div class="form__item">
+            <h2 class="form__title">Contact us for our services</h2>
+            <form class="form__action" action="#" method="post">
+              <label class="form__label">
+                <input class="form__input" type="text" name="name" placeholder="Name" required>
+              </label>
+              <label class="form__label">
+                <input class="form__input" type="email" name="email" placeholder="E-mail" required>
+              </label>
+              <label class="form__checkbox-label flex">
+                <input class="form__checkbox" type="checkbox" required>
+                <span class="form__checkbox-custom"></span>
+                I have read the privacy policy
+              </label>
+              <button class="form__btn btn" type="submit">Submit data</button>
+            </form>
+          </div>
+          <picture>
+            <source srcset="img/form-1.webp" media="(min-width: 320px) and (max-width: 576px)">
+            <source srcset="img/form-1.avif" media="(min-width: 577px)">
+            <img loading="lazy" class="form__image" srcset="img/form-1.avif" alt="Form image" src="#" width="736" height="628">
+          </picture>
         </div>
       </div>
     </section>
@@ -107,8 +120,8 @@
 
   <footer class="footer">
     <div class="footer__subdiv">
-      <div class="container flex space">
-        <ul class="flex">
+      <div class="footer__subcontainer container flex">
+        <ul class="footer__icons flex">
           <li class="footer__margin-sublink">
             <a class="footer__sublink link" href="#">Main</a>
           </li>
@@ -125,7 +138,7 @@
       <div class="footer__container container">
         <div class="footer__cube flex space">
           <a class="logo" href="#">Cities</a>
-          <ul class="flex">
+          <ul class="footer__icons flex">
             <li class="footer__margin-icon">
               <a class="footer__icon" href="#" aria-label="Instagram">
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -220,10 +233,10 @@
           </ul>
           <a class="footer__btn btn" href="#">Find out more</a>
         </div>
-        <div class="flex space">
-          <p class="footer__copyright">© 2024, Copyright.</p>
+        <div class="footer__icons flex space">
+          <p class="footer__copyright">© Cities, 2024</p>
           <a class="footer__link" href="#">Privacy policy</a>
-          <a class="footer__link" href="#">Terms of Use</a>
+          <a class="footer__link" href="#">Terms & Conditions</a>
         </div>
       </div>
     </div>
